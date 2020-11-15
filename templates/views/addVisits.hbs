@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Add Comapny</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/addVisits.css">
+</head>
+
+<body>
+    <a class="back-arrow" href="/">&#129032;</a>
+    <p class="main-title">add company visit stats</p>
+    <div class="add-company">
+        <form method="post" action="/add/visits" class="main-form">
+            <select name="company" class="company-name main-select" ></select><br>
+            <input class="main-input id-topic" type="text" name="name" id="name" placeholder="Company Name">
+            <input class="main-input id-round" type="number" name="tier"  id = "tier" placeholder="Tier" min="1" max="3">
+            <input class="main-input id-topic"  type="number" name="year" id="year" placeholder="Year">
+            <input class="main-input id-round" type="number" name="averagePackage" placeholder="Average Package" id="averagePackage" min="300000" required>
+            <input type="text" name="token" id="token" style="display: none;">
+            <input class="main-input submit" type="submit" value="Submit" placeholder="Add">
+        </form>
+    </div>
+    <div class="info" style="display:none">{{data}}</div>
+    <script src="/js/addVisits.js"></script>
+</body>
+
+</html>

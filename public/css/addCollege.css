@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #242424;
+}
+
+.login-wrap {
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.back-arrow {
+    color:  #242424;
+    background-color: whitesmoke;
+    font-size: 4vmin;
+    position: absolute;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 3vw;
+}
+
+.back-arrow:hover {
+    cursor: pointer;
+}
+
+.main-title {
+    margin-top: 10vh;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+.main-form {
+    margin-top: 10vh;
+    display: inline-block;
+    width: 30vw;
+    margin-left: 35vw;
+    text-align: center;
+}
+
+.main-input {
+    text-decoration: none;
+    width: 17vw;
+    height: 6vh;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin-top: 2vmin;
+    line-height: 5vh;
+    border-radius: 7px;
+    font-size: 1.7vmin;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    color: #242424;
+}
+
+.main-input:focus {
+    font-weight: 500;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }
+
+.submit {
+    background-color:rgb(29, 128, 4);
+    color: white;
+    font-weight: 700;
+    font-size: 2vmin;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    cursor: pointer;
+    
+}

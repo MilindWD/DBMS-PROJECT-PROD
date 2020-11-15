@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #374785;
+}
+
+.basic-details {
+    text-align: center;
+    font-size: 3vmin;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-top: 5vh;
+}
+
+.main-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 7px;
+    margin-top: 5vh;
+}
+
+.test {
+    background-color: red;
+}
+
+.in-table {
+    width: 12vw;
+    text-align: center;
+    height: 5vh;
+    background-color: whitesmoke;
+    color: #1c2446;
+    font-size: 1.6vmin;
+    border-bottom: 1px solid #374785;
+}
+
+.table-head {
+    background-color: #1c2446;
+    color: white;
+    font-size: 1.5vmin;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.63);
+}
+
+.mini-table {
+    border-collapse: collapse;
+    overflow: hidden;
+    border-left: 1px solid rgba(245, 245, 245, 0.63);
+}
+
+.back-arrow {
+    color: white;
+    background-color: #1c2446;
+    font-size: 4vmin;
+    position: absolute;
+    width: 6vmin;
+    height: 6vmin;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+.back-arrow:hover {
+    cursor: pointer;
+}
+
+.button-main {
+    text-decoration: none;
+    width: 0vw;
+    height: 4vh;
+    background-color: rgb(245, 245, 245);
+    display: inline-block;
+    line-height: 4vh;
+    text-transform: uppercase;
+    font-size: 1.4vmin;
+    text-align: center;
+    color:  #374785;
+    transition: all ease 0.5s;
+    border-radius: 5px;
+    margin-right: 1vw;
+}
+
+.branch-name {
+    display: inline-block;
+    width: 11.5vw;
+}

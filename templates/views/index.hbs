@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Placements App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    
+</head>
+
+<body>
+    <div class="page-wrap">
+        <div class="left-wrap">
+            <div class="title-left-right">View</div>
+            <div class="left">
+                <a href="/colleges" class="button-main button-left" id="first">view colleges</a><br>
+                <a href="/questions" class="button-main button-left">view all questions</a><br>
+                <a href="/companies" class="button-main button-left">view companies</a><br>
+                <a href="/branches" class="button-main button-left">view branches</a><br>
+            </div>
+        </div>
+        <div class="right-wrap">
+            <div class="title-left-right">manage</div>
+            <p class="login-name"></p>
+            <div class="right">
+                <a href="/login?q=admin" class="adm-login-btn button-main button-right" id="first">admin login</a><br>
+                <a href="/login?q=college" class="clg-login-btn button-main button-right">college login</a><br>
+                <a href="#" class="logout-btn button-main button-right">logout</a><br>
+                <a href="/add/college" class="add-college button-main button-right">add college</a><br>
+                <a href="/add/branch?q=admin" class="add-branch-admin button-main button-right">add branch</a><br>
+                <a href="/add/branch?q=college" class="add-branch-college button-main button-right">add branch</a><br>
+                <a href="/choose/company" class="add-question button-main button-right">add question</a><br>
+                <a href="/visits" class="add-visits button-main button-right">add visits</a><br>
+                <form method="POST" action="/update/college" class="delete-update">
+                    <input type="text" id="update-college" name="token" style="display: none;">
+                    <button class="button-main button-right" style="outline: none;">Update my Profile</button>
+                </form>
+                <a href="#" class="delete-profile button-main button-right" style="background-color: rgb(128, 4, 4);color: white;">Delete my profile</a>
+            </div>
+        </div>
+    </div>
+
+    {{!-- <div class="logins">
+        LOGINS
+        <div class="login-links">
+            <a href="/login?q=admin" class="login-btn">system admin login</a>
+            <a href="/login?q=college" class="login-btn">college admin login</a>
+        </div>
+        <p class="login-name"></p>
+        <button class="logout-btn">logout</button>
+    </div>
+    <div class="add">
+        <a href="/add/college" class="add-college">add college</a>
+        <a href="/add/branch?q=admin" class="add-branch-admin">add branch</a>
+        <a href="/add/branch?q=college" class="add-branch-college">add branch</a>
+        <a href="/choose/company" class="add-question">add question</a>
+        <a href="/visits" class="add-visits">add visits stats</a>
+    </div>
+    <div class="view">
+        <a href="/colleges">view colleges</a>
+        <a href="/questions">view all questions</a>
+        <a href="/companies">view companies</a>
+        <a href="/branches">view branches</a>
+    </div>
+    <div class="delete-update">
+        <form method="POST" action="/update/college">
+            <input type="text" id="update-college" name="token" style="display: none;">
+            <button>Update my Profile</button>
+        </form>
+        <button class="delete-profile">Delete my profile</button>
+    </div>
+    <div class="login-info">
+        <p class="login-info-text"></p>
+    </div>  --}}
+    <div class="info" style="display:none">{{data}}</div>
+    <script src="/js/index.js">
+    </script>
+</body>
+</html>

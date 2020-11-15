@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Add College</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/addCollege.css">
+</head>
+
+<body>
+    <a class="back-arrow" href="/">&#129032;</a>
+    <p class="main-title">add college</p>
+    <div class="main-content">
+        <form method="post" action="/add/college" class="main-form">
+            <input class="main-input" type="text" placeholder="Name" name="name" required autocomplete="off"><br>
+            <input class="main-input" type="text" placeholder="CET Code" name="cetcode" required autocomplete="off"><br>
+            <input class="main-input" type="password" placeholder="Password" name="password" required autocomplete="off"><br>
+            <input class="main-input" type="text" placeholder="Location" name="location" required autocomplete="off"><br>
+            <input class="main-input" type="text" placeholder="Contact No" name="contact" required autocomplete="off">
+            <input class="main-input" type="text" name="token" id="token" style="display: none;">
+            <input class="main-input submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="/js/addCollege.js"></script>
+</body>
+
+</html>

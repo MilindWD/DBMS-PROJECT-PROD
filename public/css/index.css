@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-wrap {
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-wrap {
+    width: 50vw;
+    height: 100vh;
+    background-color:#374785;
+    float: left;
+}
+
+.right-wrap {
+    width: 50vw;
+    height: 100vh;
+    background-color:#242424;
+    float: left;
+}
+
+.left {
+    width: 40vw;
+    height: 80vh;
+    margin-left: 5vw;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.right {
+    width: 40vw;
+    height: 80vh;
+    margin-left: 5vw;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.title-left-right {
+    margin-top: 10vh;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+.button-main {
+    text-decoration: none;
+    width: 15vw;
+    height: 5vh;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin-top: 5%;
+    line-height: 5vh;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.4vmin;
+}
+
+#first {
+    margin-top: 10vh;
+}
+
+.button-left {
+    color: #374785;
+}
+
+.button-right {
+    color: #242424;
+}
+
+.login-name {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

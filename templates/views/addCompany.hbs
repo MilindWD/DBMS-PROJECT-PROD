@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Add Comapny</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/addCompany.css">
+</head>
+
+<body>
+    <a class="back-arrow" href="/">&#129032;</a>
+    <p class="main-title">Select company</p>
+    <div class="add-company">
+        <form method="post" action="/choose/company?auth={{authType}}" class="main-form">
+            <select name="company" class="company-name main-select" ></select><br>
+            <input type="text" class="main-input" name="name" id="name" placeholder="name">
+            <input type="number" class="main-input" name="tier"  id = "tier" placeholder="tier" min="1" max="3">
+            <input type="text" class="main-input" name="token" id="token" style="display: none;">
+            <input class="main-input submit" type="submit" value="Select">
+        </form>
+    </div>
+    <div class="info" style="display:none">{{data}}</div>
+    <script src="/js/addCompany.js"></script>
+</body>
+
+</html>

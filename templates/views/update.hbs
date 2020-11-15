@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Add Comapny</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/update.css">
+</head>
+
+<body>
+    <a class="back-arrow" href="/">&#129032;</a>
+    <p class="main-title">update profile</p>
+    <div class="update-college">
+        <form method="post" action="/update/college?q=submit" class="main-form">
+            <input class="main-input" type="text" name="name" placeholder="name" id="name" autocomplete="off">
+            <input class="main-input" type="text" name="cetcode" placeholder="cetcode" id="cetcode" autocomplete="off">
+            <input class="main-input" type="text" name="contact" placeholder="contact" id="contact" autocomplete="off">
+            <input class="main-input" type="text" name="location" placeholder="location" id="location" autocomplete="off">
+            <input class="main-input" type="password" name="password" placeholder="new password"  id="password" autocomplete="off">
+            <input class="main-input" type="text" id="token" name="token" style="display: none;">
+            <input class="main-input submit" type="submit" value="update">
+        </form>
+    </div>
+    <div class="info" style="display:none">{{data}}</div>
+    <script src="/js/update.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #242424;
+    text-align: center;
+    color: white;
+    font-size: 3vmin;
+}
+
+.success {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: rgb(29, 128, 4);
+    padding: 1vmin;
+    font-size: 2vmin;
+    margin-top: 10vh;
+    color: white;
+    border-radius: 7px;
+    text-transform: uppercase;
+    margin-bottom: 10vh;
+}
+
+.fail {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: rgb(128, 4, 4);
+    padding: 1vmin;
+    font-size: 2vmin;
+    margin-top: 10vh;
+    color: white;
+    border-radius: 7px;
+    text-transform: uppercase;
+    margin-bottom: 10vh;
+}

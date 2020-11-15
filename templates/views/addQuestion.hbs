@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Add Comapany</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/addQuestion.css
+    ">
+</head>
+
+<body>
+    <a class="back-arrow" href="/">&#129032;</a>
+    <p class="main-title">add question</p>
+    <div class="add-question">
+        <form class="add-question-form main-form" method="POST" action="/add/question">
+            <select class="branches main-select" name="branch">
+            </select><br>
+            <input class="main-input id-topic" type="text" name="topic0" placeholder="Topic" id="topic" required>
+            <input class="main-input id-round" type="text" name="round0" placeholder="Round" id="round" required><br>
+            <textarea class="main-input description-input" rows = "5" cols = "60" name = "description0" placeholder="Description" required></textarea><br>
+            <a class="add-another main-input submit" href="#">add another</a>
+            <input type="text" id="collegeid" name="college" style="display: none;">
+            <input type="text" id="token" name="token" style="display: none;">
+            <input type="text" id="companyid" name="company" style="display: none;">
+            <input class="main-input submit" type="submit" value="Add" placeholder="Add">
+        </form>
+    </div>
+    <div class="info" style="display:none">{{data}}</div>
+    <script src="/js/addQuestion.js"></script>
+</body>
+
+</html>

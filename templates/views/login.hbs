@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/login.css">
+    
+</head>
+
+<body>
+    <a class="back-arrow" href="/">&#129032;</a>
+    <div class="college-login">
+        <p class="main-title">College Login</p>
+        <form method="post" action="/login/college" class="main-form">
+            <input class="main-input" type="text" placeholder="CET Code" name="username" required autocomplete="off"><br>
+            <input class="main-input" type="password" placeholder="Password" name="password" required autocomplete="off"><br>
+            <input class="main-input submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="admin-login">
+        <p class="main-title">Admin login</p>
+        <form method="post" action="/login/admin" class="main-form">
+            <input class="main-input" type="text" placeholder="Username" name="username" required autocomplete="off"><br>
+            <input class="main-input" type="password" placeholder="Password" name="password" required autocomplete="off"><br>
+            <input class="main-input submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="/js/login.js">
+    </script>
+</body>
+</html>

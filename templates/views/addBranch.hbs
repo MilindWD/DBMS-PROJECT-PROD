@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Add Branch</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/addBranch.css">
+</head>
+
+<body>
+    <a class="back-arrow" href="/">&#129032;</a>
+    <p class="main-title">add branch</p>
+    <div class="add-branch-admin">
+        <form method="post" action="/add/branch" class="main-form">
+            <input type="text" class="main-input" name="name" placeholder="Name" required autocomplete="off"><br>
+            <select name="circuit" class="main-select">
+                <option class="main-option" value="true">CIRCUIT</option>
+                <option class="main-option" value="false">NON CIRCUIT</option>
+                <input type="text" name="token" id="token" style="display: none;">
+            </select><br>
+            <input class="main-input submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="add-branch-college">
+        <div class="all-branch-added">You have registered all branches</div>
+        <form method="POST" action="/add/has" class="add-branch-college-form main-form">
+            <select name="branch" id="branches" class="main-select">
+            </select>
+            <input type="text" name="token" class="token" style="display: none;">
+            <input class="main-input submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="info" style="display:none">{{data}}</div>
+    <script src="/js/addBranch.js"></script>
+</body>
+
+</html>

@@ -62,10 +62,22 @@ app.get('/add/branch', (req, res) => {
 //admins
 const Admin = require('./models/Admin');
 const admin1 = new Admin({
-    username: 'root',
-    password: 'qwerty'
+    username: process.env.ADMIN_USERNAME,
+    password: process.env.ADMIN_PASSWORD
 });
-// admin1.save();
+
+const adminSave = async () => {
+    const adminData = await Admin.find({'username': process.env.ADMIN_USERNAME});
+    if(adminData.length===0) {
+        admin1.save();
+    }
+}
+
+adminSave();
+
+
+
+
 
 
 //listen
